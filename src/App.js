@@ -18,11 +18,12 @@ const App = () => {
   };
 
   const heartCounts = chatsData.filter((chat) => chat.liked === true);
+  // const senderType = chatsData.sender === 'Vladimir' ? 'local' : 'remote';
 
   return (
     <div id="App">
       <header>
-        <h1>Application title</h1>
+        <h1>{`${chatsData.sender} and ${chatsData.sender}`}</h1>
         <section>
           <p>{heartCounts.length} ❤️s</p>
         </section>
